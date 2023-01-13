@@ -4,6 +4,7 @@
     <meta charset="UTF-8">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'">
+    <meta name="google-signin-client_id" content="320569219924-eejbutpsvpmea02s1o9fmabk73l2gfjj.apps.googleusercontent.com">
     <title>GDS Research</title>
     <style>
         * {
@@ -23,8 +24,10 @@
     </style>
 </head>
 <body>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <div class="main">
-        <iframe id="iframe" title="GDS Secure" src="https://datastudio.google.com/embed/reporting/508dfd69-79de-43a7-b987-cec33e13d1a4/page/1M" width="90%" height="1264"></iframe>    
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <!-- <iframe id="iframe" title="GDS Secure" src="https://datastudio.google.com/embed/reporting/508dfd69-79de-43a7-b987-cec33e13d1a4/page/1M" width="90%" height="1264"></iframe>     -->
     </div>    
 </body>
 </html>
